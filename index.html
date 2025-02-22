@@ -1,118 +1,175 @@
-<!DOCTYPE html><html lang="ar">
+<!DOCTYPE html>
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahmoud 100% أخبار حقيقية</title>
+    <title>أخبار محمود</title>
+    <link rel="icon" type="image/png" href="file-6zY7Jv5nz88vG31gZChT4R">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');body {
-        font-family: 'Cairo', sans-serif;
-        direction: rtl;
-        text-align: right;
-        margin: 0;
-        padding: 0;
-        background: #ececec;
-        overflow-x: hidden;
-    }
-    header {
-        background: linear-gradient(90deg, #ff3b3b, #ff7b3b);
-        color: white;
-        padding: 20px;
-        text-align: center;
-        font-size: 30px;
-        font-weight: bold;
-        border-radius: 0 0 20px 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .container {
-        max-width: 800px;
-        margin: 30px auto;
-        background: white;
-        padding: 25px;
-        border-radius: 20px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-        position: relative;
-    }
-    .news-item {
-        border-bottom: 2px solid #ff3b3b;
-        padding: 20px 0;
-        text-align: center;
-        transition: transform 0.3s ease-in-out;
-    }
-    .news-item:hover {
-        transform: scale(1.05);
-    }
-    .news-item h2 {
-        font-size: 24px;
-        color: #ff3b3b;
-    }
-    .news-item p {
-        font-size: 18px;
-        margin: 5px 0;
-        color: #333;
-    }
-    .news-item img {
-        width: 100%;
-        max-width: 320px;
-        margin-top: 10px;
-        border-radius: 15px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .ronaldo {
-        background: black;
-        color: white;
-        padding: 25px;
-        text-align: center;
-        font-size: 26px;
-        font-weight: bold;
-        margin-top: 30px;
-        border-radius: 20px;
-        position: relative;
-        animation: shake 0.5s infinite alternate;
-    }
-    .ronaldo img {
-        width: 100%;
-        max-width: 320px;
-        margin-top: 10px;
-        border-radius: 15px;
-    }
-    @keyframes shake {
-        from { transform: rotate(-1deg); }
-        to { transform: rotate(1deg); }
-    }
-    footer {
-        background: black;
-        color: white;
-        text-align: center;
-        padding: 15px;
-        font-size: 16px;
-        margin-top: 40px;
-        border-radius: 20px 20px 0 0;
-    }
-</style>
-
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+        body {
+            font-family: 'Cairo', sans-serif;
+            direction: rtl;
+            text-align: right;
+            margin: 0;
+            padding: 0;
+            background: #000000; /* Pure black background */
+            color: #ffffff; /* White text */
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #000000, #1a1a1a); /* Shiny black gradient */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 0 20px rgba(255, 59, 59, 0.5); /* Red glow */
+            animation: fadeInDown 1s ease-in-out;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: linear-gradient(145deg, #000000, #1a1a1a); /* Shiny black gradient */
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 59, 59, 0.5); /* Red glow */
+            position: relative;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .news-item {
+            border-bottom: 2px solid #ff3b3b;
+            padding: 20px 0;
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .news-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 59, 59, 0.5); /* Red glow on hover */
+        }
+        .news-item h2 {
+            font-size: 24px;
+            color: #ff3b3b; /* Red accent for headings */
+            text-shadow: 0 0 10px rgba(255, 59, 59, 0.7); /* Red glow */
+            animation: fadeIn 1s ease-in-out;
+        }
+        .news-item p {
+            font-size: 18px;
+            margin: 5px 0;
+            color: #ddd; /* Light gray text */
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .news-item img {
+            width: 100%;
+            max-width: 320px;
+            margin-top: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(255, 59, 59, 0.5); /* Red glow */
+            animation: fadeIn 2s ease-in-out;
+        }
+        .ronaldo {
+            background: linear-gradient(145deg, #000000, #1a1a1a); /* Shiny black gradient */
+            color: white;
+            padding: 25px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            margin-top: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 59, 59, 0.5); /* Red glow */
+            position: relative;
+            animation: shake 0.5s infinite alternate, fadeIn 1s ease-in-out;
+        }
+        .ronaldo img {
+            width: 100%;
+            max-width: 320px;
+            margin-top: 10px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 59, 59, 0.5); /* Red glow */
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes shake {
+            from { transform: rotate(-1deg); }
+            to { transform: rotate(1deg); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        footer {
+            background: linear-gradient(90deg, #000000, #1a1a1a); /* Shiny black gradient */
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 16px;
+            margin-top: 40px;
+            border-radius: 20px 20px 0 0;
+            box-shadow: 0 0 20px rgba(255, 59, 59, 0.5); /* Red glow */
+            animation: fadeInUp 1s ease-in-out;
+        }
+    </style>
 </head>
-<body><header>🚀 Mahmoud 100% أخبار حقيقية</header><div class="container">
-    <h1>📰 آخر الأخبار</h1><div class="news-item">
-    <h2>🤯 معلومة صادمة</h2>
-    <p>هل تعلم أن الأسماك لا تستطيع ركوب الدراجات؟ 🤔</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2rzyq8ZCYJEt7VaeASzbLDEfhT7NhF8koPJZAWFTlJw&s" alt="سمكة تحاول ركوب دراجة">
-</div>
-
-<div class="news-item">
-    <h2>🦆 بطة عبقرية</h2>
-    <p>بطة تسببت في أزمة مرورية بعدما قررت أنها صاحبة الطريق! 🚧</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJCQ1mBh9I8bI5KC_al0ZR_vPsMzwKT6hxoUFZJ045tk3CbFos0jeixzQ&s=10" alt="بطة في الطريق">
-</div>
-
-<div class="news-item">
-    <h2>🐔 دجاجة ذكية</h2>
-    <p>رجل يعاني لأن دجاجته تفتح الثلاجة وتأكل طعامه! 🥚</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWIhqsW9X6qGG0T1wd-sl6TDCTc5u2QhIqnw&s" alt="دجاجة تفتح الثلاجة">
-</div>
-
-</div><div class="ronaldo">
-    🚀 رونالدو الأفضل بلا منازع! ⚽
-    <br>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgcxTD3_cPURqe1OjEttAzREtp5ASnK3-4sX-kpm90xQ&s" alt="رونالدو يبتسم">
-</div><footer>© 2025 Mahmoud 100% أخبار حقيقية 🚀</footer></body>
+<body>
+    <header>📰 أخبار محمود</header>
+    <div class="container">
+        <h1>🔥 أحدث الأخبار</h1>
+        <div class="news-item">
+            <h2>سمكة تحاول ركوب دراجة</h2>
+            <p>هل تعلم أن الأسماك لا تستطيع ركوب الدراجات؟ هذا ما اكتشفه صياد محلي عندما حاول تعليم سمكته قيادة دراجة هوائية.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsbLnvqYI1hlWeuLrDydnA8WqluJvRpKVtizbQ1wwCVw&s" alt="سمكة تحاول ركوب دراجة">
+        </div>
+        <div class="news-item">
+            <h2>بطة تعطل حركة المرور</h2>
+            <p>بطة قررت أنها ملكة الطريق ورفضت التحرك من وسط الشارع، مما تسبب في زحمة مرورية استمرت لأكثر من ساعة.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzN4QDqszNaeF4yqTfjjjHTYux8ROdiUj44w&s" alt="بطة في الطريق">
+        </div>
+        <div class="news-item">
+            <h2>دجاجة تفتح الثلاجة</h2>
+            <p>رجل فوجئ بدجاجته تفتح الثلاجة وتأكل كل طعامه. يقول: "أصبحت الدجاجة أكثر ذكاءً مني!"</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1pYKxn4jv56nmP2s_NvWNUGLsWelWAjAqAQ&usqp=CAU" alt="دجاجة تفتح الثلاجة">
+        </div>
+        <div class="news-item">
+            <h2>قطة تسرق وجبة سريعة</h2>
+            <p>قطة ماكرة تسللت إلى مطعم وجبات سريعة وسرقت شطيرة برغر من طاولة أحد الزبائن قبل أن تهرب بسرعة البرق.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhRg1D_i_xvnKBGtM5Dn8llbRPwglm0RL7-hLyy1ap53HCt-S9SyzPX-0y&s=10" alt="قطة تسرق وجبة سريعة">
+        </div>
+        <div class="news-item">
+            <h2>كلب يعشق البيتزا</h2>
+            <p>كلب صغير أصبح مشهورًا في الحي بعد أن عُثر عليه وهو يحمل صندوق بيتزا كاملًا في فمه دون أن يفتحه!</p>
+            <img src="Ihttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGPLsyUjC9vXQ9KAw-wUcvx317AYHMhZlgKA&sp" alt="كلب يحمل بيتزا">
+        </div>
+        <div class="news-item">
+            <h2>زرافة تتسلل إلى حديقة منزل</h2>
+            <p>زارت زرافة فضولية حديقة منزل في إفريقيا وبدأت تأكل من أشجار الزينة، مما أثار دهشة أصحاب المنزل.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMjFYaI3A6a0a-md8Co73xN5QTPYaAJa_7dw&s" alt="زرافة في حديقة منزل">
+        </div>
+    </div>
+    <div class="ronaldo">
+        ⚽ رونالدو الأفضل في العالم بلا شك!
+        <br>
+        <img src="https://pbs.twimg.com/media/E5rteXBXIAQHXuh?format=jpg&name=360x360" alt="رونالدو يبتسم">
+    </div>
+    <footer>© 2025 أخبار محمود 📰</footer>
+</body>
 </html>
